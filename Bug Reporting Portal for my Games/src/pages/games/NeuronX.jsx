@@ -154,12 +154,6 @@ function NeuronX() {
                 <div className="edit-mode">
                   <input
                     type="text"
-                    value={editGameName}
-                    onChange={(e) => setEditGameName(e.target.value)}
-                    placeholder="Game name"
-                  />
-                  <input
-                    type="text"
                     value={editDescription}
                     onChange={(e) => setEditDescription(e.target.value)}
                     placeholder="Description"
