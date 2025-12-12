@@ -110,8 +110,10 @@ function EcoQuest() {
         navigate('/home')
     }
     return (<>
-    <img src={EcoQuestImage} alt='Eco-Quest' />
-    <h1>Eco-Quest - page </h1>
+    <div className="game-page-header">
+      <img src={EcoQuestImage} alt='Eco-Quest' className="game-page-image" />
+      <h1>Eco-Quest - page</h1>
+    </div>
     <div className="app">
       <div className="bug-report-container">
         <div className="header">

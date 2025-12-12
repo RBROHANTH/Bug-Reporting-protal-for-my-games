@@ -110,8 +110,10 @@ function NeuronX() {
         navigate('/home')
     }
     return (<>
-    <img src={NeuronXImage} alt='NeuronX' />
-    <h1>NeuronX - page </h1>
+    <div className="game-page-header">
+      <img src={NeuronXImage} alt='NeuronX' className="game-page-image" />
+      <h1>NeuronX - page</h1>
+    </div>
     <div className="app">
       <div className="bug-report-container">
         <div className="header">

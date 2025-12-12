@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import AmbuliImage from '../assets/Ambuli.png'
+import EcoQuestImage from '../assets/Eco-Quest.png'
+import NeuronXImage from '../assets/NeuronX.png'
+import WildfireLogo from '../assets/wildfire_studio_logo.png'
 
 const API_URL = 'https://bug-reporting-protal-for-my-games.onrender.com/api'
 
@@ -140,11 +144,25 @@ function BugReports() {
     <div className="app">
       <div className="bug-report-container">
         <div className="header">
-          <h1>🐞 Bug Reporting Portal</h1>
+          <div className="title-section">
+            <img src={WildfireLogo} alt="Wildfire Studio" className="studio-logo" />
+            <h1>Bug Reporting Portal</h1>
+          </div>
           <h3>Choose Your Game that has Bugs</h3>
-          <button onClick={gotoAmbuli} className="logout-btn">Ambuli</button>
-          <button onClick={gotoEcoQuest} className="logout-btn">Eco-Quest</button>
-          <button onClick={gotoNeuronX} className="logout-btn">NeuronX</button>
+          <div className="game-cards-container">
+            <div className="game-card" onClick={gotoAmbuli}>
+              <img src={AmbuliImage} alt="Ambuli" className="game-card-image" />
+              <div className="game-card-name">Ambuli</div>
+            </div>
+            <div className="game-card" onClick={gotoEcoQuest}>
+              <img src={EcoQuestImage} alt="Eco-Quest" className="game-card-image" />
+              <div className="game-card-name">Eco-Quest</div>
+            </div>
+            <div className="game-card" onClick={gotoNeuronX}>
+              <img src={NeuronXImage} alt="NeuronX" className="game-card-image" />
+              <div className="game-card-name">NeuronX</div>
+            </div>
+          </div>
         </div>
   </div>
   </div>

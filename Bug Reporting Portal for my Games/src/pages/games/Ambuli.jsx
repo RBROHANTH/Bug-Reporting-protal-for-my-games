@@ -110,8 +110,10 @@ function Ambuli() {
     }
 
     return (<>
-    <img src={AmbuliImage} alt='Ambuli' />
-    <h1>Ambuli - page </h1>
+    <div className="game-page-header">
+      <img src={AmbuliImage} alt='Ambuli' className="game-page-image" />
+      <h1>Ambuli - page</h1>
+    </div>
     <div className="app">
       <div className="bug-report-container">
         <div className="header">
