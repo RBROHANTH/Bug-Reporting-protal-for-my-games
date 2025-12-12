@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AmbuliImage from '../../assets/Ambuli.png';
 
-const API_URL = 'http://localhost:3000/api'
+const API_URL = 'https://bug-reporting-protal-for-my-games.onrender.com/api'
 
 function Ambuli() {
     const [bugReports, setBugReports] = useState([])

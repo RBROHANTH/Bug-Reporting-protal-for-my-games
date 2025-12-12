@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 
-const API_URL = 'http://localhost:3000/api'
+const API_URL = 'https://bug-reporting-protal-for-my-games.onrender.com/api'
 
 function Login() {
   const [username, setUsername] = useState('')

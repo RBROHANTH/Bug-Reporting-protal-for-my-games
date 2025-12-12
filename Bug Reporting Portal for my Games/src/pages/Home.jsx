@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const API_URL = 'http://localhost:3000/api'
+const API_URL = 'https://bug-reporting-protal-for-my-games.onrender.com/api'
 
 function BugReports() {
   const [bugReports, setBugReports] = useState([])
