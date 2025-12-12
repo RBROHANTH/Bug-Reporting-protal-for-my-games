@@ -190,3 +190,49 @@
   background: linear-gradient(145deg, #ff6b35, #ff4500);
   box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
 }
+
+/* Game card summary */
+.game-card-summary {
+  padding: 0.8rem 1rem;
+  font-size: 0.85rem;
+  color: #fff5e6;
+  text-align: center;
+  line-height: 1.4;
+  background: linear-gradient(180deg, #1a0a00, #2d1810);
+  border-top: 1px solid #ff6b3540;
+}
+
+/* Game page summary */
+.game-summary {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #2d1810, #1a0a00);
+  border: 2px solid #ff6b35;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.game-summary p {
+  color: #fff5e6;
+  line-height: 1.7;
+  margin: 0.8rem 0;
+  font-size: 1rem;
+}
+
+.game-summary p:first-child {
+  margin-top: 0;
+}
+
+.game-summary p:last-child {
+  margin-bottom: 0;
+}
+
+/* Page actions buttons */
+.page-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}

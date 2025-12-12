@@ -153,14 +153,17 @@ function BugReports() {
             <div className="game-card" onClick={gotoAmbuli}>
               <img src={AmbuliImage} alt="Ambuli" className="game-card-image" />
               <div className="game-card-name">Ambuli</div>
+              <p className="game-card-summary">A first-person survival horror game set in a cursed forest based on South Indian folklore. Survive the night without weapons — only stealth and fire can save you.</p>
             </div>
             <div className="game-card" onClick={gotoEcoQuest}>
               <img src={EcoQuestImage} alt="Eco-Quest" className="game-card-image" />
               <div className="game-card-name">Eco-Quest</div>
+              <p className="game-card-summary">A 3D Unity game featuring a robot that corrects environmental mistakes. Paired with a React Native app for classroom-based learning and progress tracking.</p>
             </div>
             <div className="game-card" onClick={gotoNeuronX}>
               <img src={NeuronXImage} alt="NeuronX" className="game-card-image" />
               <div className="game-card-name">NeuronX</div>
+              <p className="game-card-summary">A gamified quiz prototype built in Unity that transforms learning into fun with points, levels, and rewards. Track your progress and enjoy learning through play.</p>
             </div>
           </div>
         </div>

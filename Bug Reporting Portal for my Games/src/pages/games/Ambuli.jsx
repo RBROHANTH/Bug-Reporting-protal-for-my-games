@@ -112,14 +112,15 @@ function Ambuli() {
     return (<>
     <div className="game-page-header">
       <img src={AmbuliImage} alt='Ambuli' className="game-page-image" />
-      <h1>Ambuli - page</h1>
+      <h1>Ambuli</h1>
+      <div className="game-summary">
+        <p>Ambuli is a first-person survival horror game set in a cursed forest inspired by South Indian folklore. You play as a 17-year-old boy who ignored his grandmother's warnings and entered a village haunted by Ambuli — a mutated predator that hunts silently through the night.</p>
+        <p>With no weapons, survival relies entirely on stealth, timing, and environmental awareness. Hide under corpse piles, cut dead trees to collect logs, and light torches or campfires to create temporary safety zones. The AI-driven Ambuli moves through the forest using node-based pathing, detects sound, and chases using raycast vision.</p>
+        <p>A custom day–night cycle runs where 1 real minute equals 20 game minutes. Survive enough cycles to reach sunrise and escape. Explore ruined temples, tunnels, mountains, and forest trails — all designed for chase, evasion, and atmospheric tension. Built in Unity with procedural clock mechanics, dynamic AI, and realistic fog and lighting.</p>
+      </div>
     </div>
     <div className="app">
       <div className="bug-report-container">
-        <div className="header">
-          <button onClick={handleLogout} className="logout-btn">Logout</button>
-        </div>
-
         <form onSubmit={handleAddBugReport} className="add-form">
           <input
             type="text"
@@ -166,7 +167,10 @@ function Ambuli() {
         {bugReports.length === 0 && !loading && (
           <p className="empty-message">No bug reports yet. Add one above!</p>
         )}
-        <button onClick={gotoHome} className="logout-btn">Back to Home</button>
+        <div className="page-actions">
+          <button onClick={gotoHome} className="logout-btn">Back to Home</button>
+          <button onClick={handleLogout} className="logout-btn">Logout</button>
+        </div>
       </div>
     </div>
 </>);   

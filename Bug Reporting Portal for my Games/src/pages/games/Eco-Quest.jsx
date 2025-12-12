@@ -112,14 +112,15 @@ function EcoQuest() {
     return (<>
     <div className="game-page-header">
       <img src={EcoQuestImage} alt='Eco-Quest' className="game-page-image" />
-      <h1>Eco-Quest - page</h1>
+      <h1>Eco-Quest</h1>
+      <div className="game-summary">
+        <p>ECO-Quest is an innovative environmental education game that combines engaging gameplay with real-world learning. The project was built to make environmental awareness fun and interactive through technology.</p>
+        <p>The game features a 3D Unity experience where players control a robot created by a scientist to correct common human mistakes that harm the environment — like closing open taps, rescuing animals trapped in plastic, and proper waste disposal.</p>
+        <p>Accompanying the game is a React Native companion app that works like a classroom system, allowing teachers to assign game-based learning tasks to students and track their progress. This combination of gaming and education creates a powerful tool for teaching environmental responsibility while keeping students engaged and motivated.</p>
+      </div>
     </div>
     <div className="app">
       <div className="bug-report-container">
-        <div className="header">
-          <button onClick={handleLogout} className="logout-btn">Logout</button>
-        </div>
-
         <form onSubmit={handleAddBugReport} className="add-form">
           <div className="game-select">
             <p>Select Game:</p>
@@ -185,7 +186,10 @@ function EcoQuest() {
         {bugReports.length === 0 && !loading && (
           <p className="empty-message">No bug reports yet. Add one above!</p>
         )}
-        <button onClick={gotoHome} className="logout-btn">Back to Home</button>
+        <div className="page-actions">
+          <button onClick={gotoHome} className="logout-btn">Back to Home</button>
+          <button onClick={handleLogout} className="logout-btn">Logout</button>
+        </div>
       </div>
     </div>
     </>);   

@@ -112,14 +112,15 @@ function NeuronX() {
     return (<>
     <div className="game-page-header">
       <img src={NeuronXImage} alt='NeuronX' className="game-page-image" />
-      <h1>NeuronX - page</h1>
+      <h1>NeuronX</h1>
+      <div className="game-summary">
+        <p>NeuronX is an interactive gamified learning platform prototype designed to make quizzes more engaging and rewarding. Built entirely in Unity with C# and graphics support from Blender, it transforms traditional learning into a fun gaming experience.</p>
+        <p>Instead of standard question-and-answer formats, NeuronX adds game elements like points for correct answers, levels to show progress, and rewards for achievements. At the end of each quiz, players can review their performance dashboard to track total points, levels earned, and areas of strength or weakness.</p>
+        <p>The goal of NeuronX is to explore how game design principles can transform passive learning into a more interactive and motivating experience. This is an early prototype, and feedback is highly encouraged to improve future versions!</p>
+      </div>
     </div>
     <div className="app">
       <div className="bug-report-container">
-        <div className="header">
-          <button onClick={handleLogout} className="logout-btn">Logout</button>
-        </div>
-
         <form onSubmit={handleAddBugReport} className="add-form">
           <div className="game-select">
             <p>Select Game:</p>
@@ -185,7 +186,10 @@ function NeuronX() {
         {bugReports.length === 0 && !loading && (
           <p className="empty-message">No bug reports yet. Add one above!</p>
         )}
-        <button onClick={gotoHome} className="logout-btn">Back to Home</button>
+        <div className="page-actions">
+          <button onClick={gotoHome} className="logout-btn">Back to Home</button>
+          <button onClick={handleLogout} className="logout-btn">Logout</button>
+        </div>
       </div>
     </div>
     </>);   
